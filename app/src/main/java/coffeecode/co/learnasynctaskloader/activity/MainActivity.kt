@@ -1,4 +1,4 @@
-package coffeecode.co.learnasynctaskloader
+package coffeecode.co.learnasynctaskloader.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -6,8 +6,10 @@ import android.text.TextUtils
 import androidx.loader.app.LoaderManager
 import androidx.loader.content.Loader
 import androidx.recyclerview.widget.LinearLayoutManager
+import coffeecode.co.learnasynctaskloader.R
 import coffeecode.co.learnasynctaskloader.model.WeatherItems
 import coffeecode.co.learnasynctaskloader.adapter.WeatherAdapter
+import coffeecode.co.learnasynctaskloader.asycntask.MyAsyncTaskLoader
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity(), LoaderManager.LoaderCallbacks<ArrayList<WeatherItems>>{
